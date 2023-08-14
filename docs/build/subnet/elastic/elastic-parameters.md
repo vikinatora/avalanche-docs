@@ -71,6 +71,19 @@ The following constraints apply:
 
 See [Notes on Percentages](#notes-on-percentages) section to understand `PercentDenominator` role.
 
+## Notes on Percentages
+
+`PercentDenominator = 1_000_000` is the denominator used to calculate percentages.
+
+It allows you to specify percentages up to 4 digital positions.
+To denominate your percentage in `PercentDenominator` just multiply it by `10_000`.
+For example:
+
+* `100%` corresponds to `100 * 10_000 = 1_000_000`
+* `1%` corresponds to `1* 10_000 = 10_000`
+* `0.02%` corresponds to `0.002 * 10_000 = 200`
+* `0.0007%` corresponds to `0.0007 * 10_000 = 7`
+
 ### `MinValidatorStake`
 
 `MinValidatorStake` has type `uint64` and it's the minimum amount of funds required to become a validator.
@@ -233,18 +246,6 @@ that this must be true at any point in time.
 Note that setting $MaxValidatorWeightFactor$ to 1 disables delegation since the $MaxWeight = Validator.Weight$.
 <!-- vale on -->
 
-## Notes on Percentages
-
-`PercentDenominator = 1_000_000` is the denominator used to calculate percentages.
-
-It allows you to specify percentages up to 4 digital positions.
-To denominate your percentage in `PercentDenominator` just multiply it by `10_000`.
-For example:
-
-* `100%` corresponds to `100 * 10_000 = 1_000_000`
-* `1%` corresponds to `1* 10_000 = 10_000`
-* `0.02%` corresponds to `0.002 * 10_000 = 200`
-* `0.0007%` corresponds to `0.0007 * 10_000 = 7`
 
 ## Primary Network Parameters on Mainnet
 
