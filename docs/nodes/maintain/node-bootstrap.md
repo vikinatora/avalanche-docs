@@ -1,6 +1,6 @@
 ---
 tags: [Nodes]
-description: Node Bootstrap is the process where a node *securely* downloads linear chain blocks to recreate the latest state of the chain locally. Bootstrapping a node is a multi-step process which requires downloading the chains required by the Primary Network (that is, the C-Chain, P-Chain, and X-Chain), as well as the chains required by any additional Subnets that the node explicitly tracks.
+description: Node Bootstrap is the process where a node *securely* downloads linear chain blocks to recreate the latest state of the chain locally. Bootstrapping a node is a multi-step process which requires downloading the chains required by the Primary Network (that is, the C-Chain, P-Chain, and X-Chain), as well as the chains required by any additional Subnets that the node explicitly tracks.AvalancheGo codebase
 sidebar_label: "Bootstrapping: What to Expect"
 pagination_label: What to Expect While Bootstrapping
 sidebar_position: 0
@@ -62,7 +62,7 @@ before completing its bootstrap. To solve this chicken-and-egg situation the
 Avalanche Foundation maintains a trusted default set of validators called
 beacons (but users are free to configure their own). Beacon Node-IDs and IP
 addresses are listed in the [AvalancheGo
-codebase](https://github.com/ava-labs/avalanchego/blob/master/genesis/beacons.go).
+codebase](https://github.com/ava-labs/avalanchego/blob/master/genesis/bootstrappers.json).
 Every node has the beacon list available from the start and can reach out to them
 as soon as it starts.
 
